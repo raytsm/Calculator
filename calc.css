@@ -1,31 +1,37 @@
 * {
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
 .calculator {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        "display display display display"
         "c c backspace divide"
-        "seven eight nine multiplys"
+        "seven eight nine multiply"
         "four five six minus"
-        "one two three adds"
-        "zeroo zeroo zeroo equals";
-    height: 600px;
+        "one two three add"
+        "zero zero zero equal";
+    height: 500px;
     width: 400px;
 }
 .calc-display {
-    grid-area: display;
+    width: 400px;
+    height: 100px;
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size:32px;
 }
 .box {
-        border: 2px solid black;
-        font-size: 30px;
+        border: 1px solid black;
+        font-size: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -82,20 +88,20 @@
     grid-area: nine;
 }
 #zero {
-    grid-area: zeroo;
+    grid-area: zero;
 }
 #divide {
     grid-area: divide;
 }
 #multiply {
-    grid-area: multiplys;
+    grid-area: multiply;
 }
 #minus {
     grid-area: minus;
 }
 #add {
-    grid-area: adds;
+    grid-area: add;
 }
 #equals {
-    grid-area: equals;
+    grid-area: equal;
 }
