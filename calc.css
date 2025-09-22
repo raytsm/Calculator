@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "display display display display"
+        "c c backspace divide"
+        "seven eight nine multiplys"
+        "four five six minus"
+        "one two three adds"
+        "zeroo zeroo zeroo equals";
+    height: 600px;
+    width: 400px;
+}
+.calc-display {
+    grid-area: display;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+        border: 2px solid black;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.num-box {
+    background-color: grey;
+}
+.num-box:hover {
+    background-color: lightgrey;
+}
+.num-box:active{
+    background-color: darkgrey;
+}
+.operator-box{
+    background-color: orange;
+}
+.operator-box:hover{
+    background-color: lightsalmon;
+}
+.operator-box:active{
+    background-color: darkorange;
+}
+#c {
+    grid-area: c;
+}
+#backspace {
+    grid-area: backspace;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#zero {
+    grid-area: zeroo;
+}
+#divide {
+    grid-area: divide;
+}
+#multiply {
+    grid-area: multiplys;
+}
+#minus {
+    grid-area: minus;
+}
+#add {
+    grid-area: adds;
+}
+#equals {
+    grid-area: equals;
+}
